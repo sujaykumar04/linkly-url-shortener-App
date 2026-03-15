@@ -1,0 +1,17 @@
+export const dummyData = [
+  { clickDate: "2024-12-01", count: 12 },
+  { clickDate: "2024-12-03", count: 7 },
+  { clickDate: "2024-12-05", count: 19 },
+  { clickDate: "2024-12-08", count: 5 },
+  { clickDate: "2024-12-10", count: 23 },
+  { clickDate: "2024-12-12", count: 14 },
+  { clickDate: "2024-12-15", count: 31 },
+  { clickDate: "2024-12-18", count: 8 },
+  { clickDate: "2024-12-20", count: 17 },
+  { clickDate: "2024-12-22", count: 26 },
+  { clickDate: "2024-12-25", count: 9 },
+  { clickDate: "2024-12-28", count: 42 },
+  { clickDate: "2024-12-29", count: 11 },
+  { clickDate: "2024-12-30", count: 33 },
+  { clickDate: "2024-12-31", count: 18 },
+];

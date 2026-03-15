@@ -1,0 +1,16 @@
+# Node
+frontend-final/node_modules/
+frontend-final/dist/
+
+# Spring Boot
+url-shortener-Springboot/target/
+url-shortener-Springboot/*.iml
+url-shortener-Springboot/.idea/
+
+# macOS
+.DS_Store
+**/.DS_Store
+
+# Env files
+frontend-final/.env
+url-shortener-Springboot/.env
