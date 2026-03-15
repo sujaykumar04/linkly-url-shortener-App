@@ -1,70 +1,108 @@
-## Linkly — URL Shortener & Analytics
+# 🔗 Linklytics — URL Shortener & Analytics
 
-A full-stack URL shortening platform with real-time click analytics, built with Spring Boot and React.
+> A full-stack URL shortening platform with real-time click analytics, built with Spring Boot and React.
 
+---
 
-## What is Linkly?
-Linklylets you turn any long URL into a clean, shareable short link — and then tracks every click with a day-by-day analytics dashboard. Built as a production-grade full-stack project with JWT authentication, PostgreSQL, and a minimal dark/light mode UI.
+## ✨ Features
 
-## Features
+- 🔗 **URL Shortening** — Generate clean 8-character short links instantly
+- 📊 **Analytics Dashboard** — View total clicks over time with bar charts
+- 🔍 **Per-Link Analytics** — Expand any link to see its individual click history
+- 🔐 **JWT Authentication** — Secure register & login with token-based auth
+- 🌙 **Dark / Light Mode** — System-aware theme toggle, persisted across sessions
+- 📋 **Copy to Clipboard** — One-click copy of any short URL
+- 🔒 **Protected Routes** — Dashboard requires login, public pages auto-redirect
 
-🔗 URL Shortening — Instantly generate short 8-character slugs for any URL
-📊 Analytics Dashboard — View total clicks over time with interactive bar charts
-🔍 Per-Link Analytics — Expand any link to see its individual click history
-🔐 JWT Authentication — Secure register/login with token-based auth
-🌙 Dark / Light Mode — System-aware theme toggle, persisted across sessions
-📋 Copy to Clipboard — One-click copy of any short URL
-↩️ Smart Redirects — Short links redirect to original URLs with click tracking
-🔒 Protected Routes — Dashboard is private; public pages auto-redirect if logged in
+---
 
+## 🛠 Tech Stack
 
-## Tech Stack
-## Backend
-TechnologyPurposeSpring Boot 4REST API frameworkSpring SecurityAuthentication & authorizationJWT (jjwt)Token-based authSpring Data JPADatabase ORMPostgreSQLRelational databaseLombokBoilerplate reduction
-## Frontend
-TechnologyPurposeReact 18 + ViteUI framework & build toolTailwind CSSUtility-first stylingReact QueryServer state & cachingChart.jsAnalytics bar chartsReact Hook FormForm validationReact Router v7Client-side routingAxiosHTTP clientMUI (Modal)Accessible popup components
+**Backend**
 
-## Project Structure
+| Technology | Purpose |
+| --- | --- |
+| Spring Boot | REST API framework |
+| Spring Security | Authentication & authorization |
+| JWT (jjwt) | Token-based auth |
+| Spring Data JPA | Database ORM |
+| PostgreSQL | Relational database |
+| Lombok | Boilerplate reduction |
 
+**Frontend**
+
+| Technology | Purpose |
+| --- | --- |
+| React 18 + Vite | UI framework & build tool |
+| Tailwind CSS | Utility-first styling |
+| React Query | Server state & caching |
+| Chart.js | Analytics bar charts |
+| React Hook Form | Form validation |
+| React Router v7 | Client-side routing |
+| Axios | HTTP client |
+
+---
+
+## 📁 Project Structure
+
+```
 URL-Shortener/
-├── frontend-final/               # React + Vite frontend
-│   └── src/
-│       ├── api/                  # Axios instance
-│       ├── components/
-│       │   ├── Dashboard/        # DashboardLayout, Graph, ShortenItem...
-│       │   ├── LandingPage.jsx
-│       │   ├── LoginPage.jsx
-│       │   ├── RegisterPage.jsx
-│       │   └── ...
-│       ├── contextApi/           # Auth token + dark mode context
-│       ├── hooks/                # React Query custom hooks
-│       └── utils/                # Subdomain routing helpers
 │
-└── url-shortener-Springboot/     # Spring Boot backend
+├── frontend-final/                     # React + Vite frontend
+│   └── src/
+│       ├── api/                        # Axios instance
+│       ├── contextApi/                 # Auth token + dark mode state
+│       ├── hooks/                      # React Query custom hooks
+│       ├── utils/                      # Subdomain routing helpers
+│       └── components/
+│           ├── LandingPage.jsx
+│           ├── LoginPage.jsx
+│           ├── RegisterPage.jsx
+│           └── Dashboard/
+│               ├── DashboardLayout.jsx
+│               ├── Graph.jsx
+│               ├── ShortenItem.jsx
+│               └── CreateNewShorten.jsx
+│
+└── url-shortener-Springboot/           # Spring Boot backend
     └── src/main/java/com/url/shortener/
-        ├── controller/           # Auth, URL, Redirect controllers
-        ├── service/              # Business logic
-        ├── models/               # User, UrlMapping, ClickEvent
-        ├── dtos/                 # Request/response objects
-        ├── repository/           # JPA repositories
-        └── security/             # JWT filter, config
+        ├── controller/                 # Auth, URL, Redirect controllers
+        ├── service/                    # Business logic
+        ├── models/                     # User, UrlMapping, ClickEvent
+        ├── dtos/                       # Request / response objects
+        ├── repository/                 # JPA repositories
+        └── security/                   # JWT filter & config
+```
+
+---
 
 
-Screenshots
-
-🚧 Coming Soon
+---
 
 
-Live Demo
+## 📸 Screenshots
 
-🚧 Coming Soon — Deployment in progress
+> 🚧 Coming Soon
 
+---
 
+## 🌍 Live Demo
 
+> 🚧 Coming Soon — Deployment in progress
 
-Author
-Sujay Kumar
-GitHub: @sujaykumar04
+---
 
-Built with Spring Boot + React
+## ☁️ Deployment
 
+> 🚧 Coming Soon — Guide for deploying backend to Render and frontend to Netlify will be added here
+
+---
+
+## 👤 Author
+
+**Sujay Kumar**  
+GitHub: [@sujaykumar04](https://github.com/sujaykumar04)
+
+---
+
+*Built with Spring Boot + React*
