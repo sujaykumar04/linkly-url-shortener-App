@@ -82,7 +82,9 @@ URL-Shortener/
 
 ## 📸 Screenshots
 
-> 🚧 Coming Soon
+<img width="1899" height="1073" alt="Screenshot 2026-05-28 at 1 35 35 PM" src="https://github.com/user-attachments/assets/daf1c6c9-a36f-43fc-a2ed-f74a0703bfa9" />
+<img width="1899" height="1073" alt="Screenshot 2026-05-28 at 1 34 52 PM" src="https://github.com/user-attachments/assets/e5a84b0c-e950-4934-85e3-87152bd2622b" />
+
 
 ---
 
