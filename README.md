@@ -96,7 +96,7 @@ URL-Shortener/
 
 ## ☁️ Deployment
 
-> 🚧 Coming Soon — Guide for deploying backend to Render and frontend to Netlify will be added here
+> 🚧 Coming Soon 
 
 ---
 
