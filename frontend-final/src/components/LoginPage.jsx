@@ -41,7 +41,6 @@ const LoginPage = () => {
                     flex items-center justify-center px-4 py-12
                     transition-colors duration-200">
       <div className="w-full max-w-sm">
-        {/* Logo mark */}
         <div className="flex justify-center mb-8">
           <div className="w-10 h-10 rounded-xl bg-custom-gradient
                           flex items-center justify-center
@@ -59,15 +58,42 @@ const LoginPage = () => {
 
         <div className="card p-6">
           <form onSubmit={handleSubmit(loginHandler)} className="flex flex-col gap-5">
-            <TextField label="Username" id="username" type="text"
+            <TextField
+              label="Username"
+              id="username"
+              type="text"
               placeholder="Your username"
-              errors={errors} register={register}
-              required message="Username is required" />
-            <TextField label="Password" id="password" type="password"
-              placeholder="Your password"
-              errors={errors} register={register}
-              required message="Password is required" />
-            <button type="submit" disabled={loader} className="btn-primary w-full mt-1">
+              errors={errors}
+              register={register}
+              required
+              message="Username is required"
+            />
+            <div className="flex flex-col gap-1">
+              <TextField
+                label="Password"
+                id="password"
+                type="password"
+                placeholder="Your password"
+                errors={errors}
+                register={register}
+                required
+                message="Password is required"
+              />
+              <div className="flex justify-end">
+                <Link
+                  to="/forgot-password"
+                  className="text-xs text-primary-500 dark:text-primary-400
+                             hover:underline font-medium"
+                >
+                  Forgot password?
+                </Link>
+              </div>
+            </div>
+            <button
+              type="submit"
+              disabled={loader}
+              className="btn-primary w-full mt-1"
+            >
               {loader ? "Signing in…" : "Sign in →"}
             </button>
           </form>
@@ -75,9 +101,10 @@ const LoginPage = () => {
 
         <p className="text-center text-sm text-slate-500 dark:text-slate-400 mt-6">
           Don&apos;t have an account?{" "}
-          <Link to="/register"
-            className="font-semibold text-primary-600 dark:text-primary-400
-                       hover:underline">
+          <Link
+            to="/register"
+            className="font-semibold text-primary-600 dark:text-primary-400 hover:underline"
+          >
             Sign up free
           </Link>
         </p>

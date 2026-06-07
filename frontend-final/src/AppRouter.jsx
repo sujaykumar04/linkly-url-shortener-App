@@ -7,6 +7,7 @@ import LandingPage from "./components/LandingPage";
 import AboutPage from "./components/AboutPage";
 import RegisterPage from "./components/RegisterPage";
 import LoginPage from "./components/LoginPage";
+import ForgotPasswordPage from "./components/ForgotPasswordPage";
 import DashboardLayout from "./components/Dashboard/DashboardLayout";
 import PrivateRoute from "./PrivateRoute";
 import ErrorPage from "./components/ErrorPage";
@@ -37,6 +38,14 @@ const AppRouter = () => {
           element={
             <PrivateRoute publicPage={true}>
               <LoginPage />
+            </PrivateRoute>
+          }
+        />
+        <Route
+          path="/forgot-password"
+          element={
+            <PrivateRoute publicPage={true}>
+              <ForgotPasswordPage />
             </PrivateRoute>
           }
         />
