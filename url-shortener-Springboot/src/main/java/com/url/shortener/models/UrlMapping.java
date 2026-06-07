@@ -10,12 +10,19 @@ import java.util.List;
 @Data
 @Table(name = "urlmapping")
 public class UrlMapping {
+
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private Long id ;
+    private Long id;
+
+    @Column(columnDefinition = "TEXT", nullable = false)
     private String originalUrl;
+
+    @Column(length = 255, nullable = false, unique = true)
     private String shortUrl;
-    private int  clickCount;
+
+    private int clickCount;
+
     private LocalDateTime createdDate;
 
     @ManyToOne
@@ -24,6 +31,4 @@ public class UrlMapping {
 
     @OneToMany(mappedBy = "urlMapping")
     private List<ClickEvent> clickEvents;
-
-
 }
